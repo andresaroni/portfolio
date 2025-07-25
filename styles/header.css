@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.logo, .menu {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.menu {
+    width: 140px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+}
+
+.menu:hover {
+    background-color: var(--color-red);
+}
+
+.cabecera {
+    padding-top: 40px;
+}
+
+h1 {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+.cabecera h2 {
+    padding: 20px 0;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+.cabecera h2,p {
+    opacity: 0;
+}
+
+.parrafo {
+    max-width: 1000px;
+    padding-bottom: 100px;
+}
+
+.cabecera p {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 300;
+    font-size: 2.2em;
+}
+
+.cabecera h3 {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+}
+
+@media (width < 650px) {
+
+    .logo, .menu {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        width: 100px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .cabecera h2 {
+        font-size: 1.8em;
+    }
+
+    .cabecera p {
+        font-size: 1.5em;
+    }
+
+    .cabecera h3 {
+        font-size: 2.5em;
+    }
+
+}
