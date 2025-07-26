@@ -47,13 +47,49 @@ h1 {
 
 .parrafo {
     max-width: 1000px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .cabecera p {
     font-family: 'Clash Grotesk', sans-serif;
     font-weight: 300;
     font-size: 2.2em;
+}
+
+@keyframes slide{
+
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+
+}
+
+.habilidades{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 60px 0;
+    padding-bottom: 150px;
+}
+
+.habilidades h4{
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-bottom: 40px;
+}
+
+.logos-slide{
+    display: flex;
+    animation: slide 20s linear infinite;
+    width: max-content;
+}
+
+.logos-slide img{
+    width: 80px;
+    margin: 0 80px;
 }
 
 .cabecera h3 {
@@ -87,6 +123,14 @@ h1 {
 
     .cabecera h3 {
         font-size: 2.5em;
+    }
+
+    .habilidades h4{
+        font-size: 1.3em;
+    }
+
+    .logos-slide img{
+        width: 60px;
     }
 
 }
