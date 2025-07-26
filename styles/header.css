@@ -83,7 +83,7 @@ h1 {
 
 .logos-slide{
     display: flex;
-    animation: slide 20s linear infinite;
+    animation: slide 30s linear infinite;
     width: max-content;
 }
 
