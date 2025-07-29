@@ -1,5 +1,5 @@
 import { cargarComponentes } from './cargarComponentes.js';
 
-cargarComponentes('header', 'components/header.html', 'styles/header.css', 'js/header.js')
-cargarComponentes('menu-bar', 'components/menu-bar.html', 'styles/menu-bar.css', 'js/menu-bar.js')
-cargarComponentes('proyectos', 'components/proyectos.html', 'styles/proyectos.css')
+cargarComponentes('header', 'components/header.html', 'js/header.js')
+cargarComponentes('menu-bar', 'components/menu-bar.html', 'js/menu-bar.js')
+cargarComponentes('proyectos', 'components/proyectos.html')
