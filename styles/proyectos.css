@@ -1,52 +1,172 @@
-.proyectos{
+.proyectos {
     padding-top: 50px;
 }
 
-.proyectos h3{
-    font-family: 'Clash Grotesk', sans-serif;
+.proyectos h3 {
     font-weight: 400;
-    font-size: 3.5em;
-    padding-bottom: 50px;
+    font-size: 4em;
+    padding: 60px 0;
 }
 
-.proyecto-destacado{
+.proyecto-destacado {
     display: grid;
     place-items: center;
     max-width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    margin-top: -50px;
 }
 
-.proyecto-destacado img{
+.proyecto-destacado img {
     width: 100%;
+    max-width: 1900px;
+    border-radius: 10px;
+    max-height: 900px;
+    min-height: 500px;
 }
 
-.proyectos a{
-    font-family: 'Clash Grotesk', sans-serif;
+.enlace a {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     position: relative;
     transition: color 0.4s ease;
     transition-delay: 0.4s;
 }
 
-.proyectos a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: currentColor;
-  transition: all 0.4s ease;
+.enlace a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+    transition: all 0.4s ease;
 }
 
-.proyectos a:hover::after {
-  width: 100%;
+.enlace a:hover::after {
+    width: 100%;
 }
 
-.proyectos a:hover{
+.enlace a:hover {
     color: var(--color-red);
     transition-delay: 0.5s;
 }
 
+.carrusel {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.slide-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+}
+
+.project {
+    display: grid;
+}
+
+.content-img{
+    width: 100%;
+    max-width: 1900px;
+}
+
+.content-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info {
+    display: grid;
+    padding-top: 20px;
+    max-width: 900px;
+    gap: 10px;
+}
+
+.info h4 {
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+.info p {
+    font-size: 2em;
+    color: #aaa;
+    margin: 0;
+}
+
+.info a {
+    padding-top: 10px;
+    font-size: 1.8em;
+    color: white;
+    transition: .3s all;
+}
+
+.info a:hover {
+    color: var(--color-red);
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    font-size: 4em;
+    background: none;
+    border: 3px solid white;
+    color: white;
+    padding: 20px 70px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: white;
+    color: black;
+}
+
+@media (width < 650px) {
+
+    .proyectos h3 {
+        font-size: 2.2em;
+    }
+
+    .proyectos a {
+        font-size: 1.5em;
+    }
+
+    a {
+        font-size: 1.3em;
+    }
+
+    .info {
+        max-width: 350px;
+    }
+
+    .info h4 {
+        font-size: 1.5em;
+    }
+
+    .info p {
+        font-size: 1em;
+    }
+
+    .info a {
+        font-size: 1.1em;
+    }
+
+    .buttons button {
+        font-size: 2em;
+        padding: 10px 40px;
+        margin: 0 5px;
+    }
+
+}
