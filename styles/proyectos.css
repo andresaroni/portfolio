@@ -20,8 +20,8 @@
     width: 100%;
     max-width: 1900px;
     border-radius: 10px;
-    max-height: 900px;
-    min-height: 500px;
+    max-height: 1200px;
+    min-height: 200px;
 }
 
 .enlace a {
@@ -54,7 +54,6 @@
 }
 
 .carrusel {
-    display: flex;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -64,24 +63,28 @@
 .slide-content {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .slide {
-    min-width: 100%;
     display: flex;
+    min-width: 100%;
 }
 
 .project {
-    display: grid;
+
+    width: 100%; 
 }
 
 .content-img{
     width: 100%;
-    max-width: 1900px;
+    max-width: 100%;
 }
 
 .content-img img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -136,7 +139,7 @@
 @media (width < 650px) {
 
     .proyectos h3 {
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 
     .proyectos a {
